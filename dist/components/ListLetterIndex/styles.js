@@ -12,12 +12,11 @@ exports.styles = react_native_1.StyleSheet.create({
         height: "100%",
         position: "absolute",
         top: 0,
+        bottom: 0,
         right: 0,
     },
     letterIndexList: {
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
+        // height: "100%",
     },
     letterIndexItem: {
         width: sizes.containerWidth,

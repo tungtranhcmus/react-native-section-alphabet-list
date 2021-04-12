@@ -14,7 +14,9 @@ exports.ListLetterIndex = function (_a) {
     var sectionData = _a.sectionData, onPressLetter = _a.onPressLetter, indexLetterColor = _a.indexLetterColor;
     var labelStyle = indexLetterColor ? { color: indexLetterColor } : {};
     return (<react_native_1.View style={styles_1.styles.letterIndexContainer}>
-      <react_native_1.FlatList contentContainerStyle={styles_1.styles.letterIndexList} data={sectionData} keyExtractor={function (i) { return i.title; }} renderItem={function (_a) {
+      <react_native_1.FlatList
+      showsVerticalScrollIndicator={false}
+       contentContainerStyle={styles_1.styles.letterIndexList} data={sectionData} keyExtractor={function (i) { return i.title; }} renderItem={function (_a) {
         var item = _a.item, index = _a.index;
         return (<react_native_1.TouchableOpacity testID="indexItem" onPress={function () { return onPressLetter(index); }}>
             <react_native_1.View style={styles_1.styles.letterIndexItem}>
