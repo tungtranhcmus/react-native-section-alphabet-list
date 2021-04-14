@@ -1,4 +1,3 @@
-"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_native_1 = require("react-native");
 var sizes = {
@@ -20,13 +19,12 @@ exports.styles = react_native_1.StyleSheet.create({
     },
     letterIndexItem: {
         width: sizes.containerWidth,
-        // height: sizes.itemHeight,
         alignItems: "center",
         justifyContent: "center",
-        paddingVertical: 7
+        paddingBottom: 3
     },
     letterIndexLabel: {
-        fontSize: 15,// sizes.itemFontSize,
+        fontSize: sizes.itemFontSize,
         color: "grey",
     },
 });
