@@ -14,7 +14,7 @@ export const ListLetterIndex = ({
       <FlatList
         showsVerticalScrollIndicator={false}
         bounces={false}
-        contentContainerStyle={styles.letterIndexList}
+        style={styles.flaslist}
         data={sectionData}
         keyExtractor={(i) => i.title}
         renderItem={({ item, index }) => (
